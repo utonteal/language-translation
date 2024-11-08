@@ -1,0 +1,34 @@
+[
+  {
+    "module":"registration",
+    "text": "WELCOME",
+    "en": "Welcome to our application",
+    "fr": "Bienvenue dans notre application"
+  },
+  {
+    "text": "GREETING",
+    "en": "Hello, how are you?",
+    "fr": "Bonjour, comment ça va ?"
+  },
+  {
+    "text": "EMAIL",
+    "en": "Email",
+    "fr": "E-mail"
+  },
+  {
+    "text": "EMAIL_REQUIRED",
+    "en": "Email is required",
+    "fr": "L'e-mail est requis"
+  },
+  {
+    "text": "INVALID_EMAIL",
+    "en": "Please enter a valid email address",
+    "fr": "Veuillez entrer une adresse e-mail valide"
+  },
+  {
+    "text": "SUBMIT",
+    "en": "Submit",
+    "fr": "Soumettre"
+  }
+]
+

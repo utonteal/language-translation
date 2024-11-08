@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>{{ 'WELCOME' | translate }}</h1>
+  <p>{{ 'GREETING' | translate }}</p>
+
+  <form (ngSubmit)="onSubmit()" #emailForm="ngForm">
+    <div class="form-group">
+      <label for="email">{{ 'EMAIL' | translate }}</label>
+      <input 
+        type="email" 
+        id="email" 
+        class="form-control" 
+        name="email" 
+        [(ngModel)]="email" 
+        #emailInput="ngModel" 
+        required 
+        email 
+      />
+      <div *ngIf="emailInput.touched && emailInput.invalid">
+        <div *ngIf="emailInput.errors?.required">{{ 'EMAIL_REQUIRED' | translate }}</div>
+        <div *ngIf="emailInput.errors?.email">{{ 'INVALID_EMAIL' | translate }}</div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="emailForm.invalid">{{ 'SUBMIT' | translate }}</button>
+  </form>
+<hr>
+  <div class="language-switcher">
+    <button (click)="switchLanguage('en')">English</button>
+    <button (click)="switchLanguage('fr')">Français</button>
+  </div>
+</div>
